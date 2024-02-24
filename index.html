@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page">
+<!-- видимое содержание страницы класса page -->
+   <main class="page__main">
+    <!-- тег для основного контента товаров -->
+        <section class="catalog container">
+        <!-- список товаров отделяем в отдельную секцию, так же как div но section симантичнее -->
+            <h1 class="catalog__title title">Выбери свой продукт</h1>
+            <!-- заголовок 1 уровня класса title -->
+            <!-- добавили отдельный дополнительный класс title (это термин называется NIX, вписывать несколько классов в одну строку)-->
+            <ul class="catalog__list">
+            <!-- добавим неупорядочный список с классом catalog_list -->
+              <li class="catalog__item product">
+              <!-- пункт для неупорядочного списка без li будет неправильно c классом catalog__item(для стилизации размера карточки в пространстве)-->
+              <!-- добавили отдельный класс product для стилизации карточки(внутренности карточки)-->
+                <a href="#">
+                  <!-- ссылка на товар -->
+                  <img src="img/product.jpg" alt="Товар увлажняющий мусс" class="product__img">
+                  <!-- изобажение для одного из пунктов(а пунктов может быть много) из списка  -->
+                </a>
+                <p class="product__tag">для нормальной кожи</p>
+                <!-- абзац с классом product__tage -->
+
+                <h2 class="product__title">Увлажняющий мусс</h2>
+                <!-- заголовок 2 уровня с классом product__title -->
+                <div class="product__description">
+                <!-- сделал div контейнер для того, чтобы потом упростить работу в CSS  -->
+                <!-- чтобы потом установить свойство для тега p, которые вложены в контейнер product__description (.product__description p вложенность селекторов)-->
+                  <p>Глубоко увлажняет кожу лица, оставляя ее мягкой и гладкой</p>
+                  <!-- абзац  -->
+                </div>
+                <!-- закрыть контенер с абзацем(?) непонятно зачем div -->
+                <span class="product__mini-title">Состав:</span>
+                <!-- почему не p(?) -->
+                <ul class="product__compound">
+                <!-- неупорядочный список с классом product__compound -->
+                  <li>натуральноLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis soluta blanditiis explicabo voluptatem ullam expedita animi veniam, qui placeat esse laudantium ipsam praesentium eaque, voluptate, temporibus aspernatur sit recusandae necessitatibus perferendis eius provident sequi cupiditate? Voluptates dolorum natus esse placeat? Accusamus maxime nobis temporibus eius eos magnam tempore voluptates itaque. ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam illo porro at repellat expedita culpa a dignissimos vel repellendus fugit!</li>
+                  <!-- пункты состава -->
+                  <li>витамины</li>
+                  <li>солнцезащита</li>
+                  <!-- заменить на переменную которая циклично ставится(?) -->
+                </ul>
+                        
+                <div class="product__price">
+                <!-- блок контейнер div чтобы можно было в css раскидать по сторонам влево - цена, вправо - сумму -->
+                  <b>Цена</b>
+                  <span>2 500</span>
+                  <!-- а почему у нас цена тоже не тянется как карточка? -->
+                  <!-- .product = display: flex/column -->
+                </div>
+              </li>
+
+              <li class="catalog__item product">
+                <!-- // ширина каждой карточки мусса 340px -->
+                <img src="img/product.jpg" alt="Товар Увлажняющий мусс" class="product__img">
+                <!-- // так как картинка - строчный элемент нужно установить display:block на картинку -->
+                <p class="product__tag">для нормальной кожи</p>
+                <a href="#">
+                  <h2 class="product__title">Увлажняющий мусс</h2>
+                </a>
+                <!-- могут попрописть поставить заголовок в виде ссылки -->
+                <!-- так как ссылка строчный элемент, то нужно ее сделать блочной css display: block -->
+        
+                <div class="product__description">
+                  <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+                </div>
+        
+                <span class="product__mini-title">Состав:</span>
+                <ul class="product__compound">
+                  <li>активные натуральные комплексы</li>
+                  <li>витамины С, А, РР, В И Е</li>
+                  <li>солнцезащитные компоненты</li>
+                </ul>
+        
+                <div class="product__price">
+                  <b>Цена</b>
+                  <span>2 750 ₽</span>
+                </div>
+                  
+              </li>
+
+              <li class="catalog__item product">
+              
+                <img src="img/product.jpg" alt="Товар Увлажняющий мусс" class="product__img">
+        
+                <p class="product__tag">для нормальной кожи</p>
+                <h2 class="product__title">Увлажняющий мусс</h2>
+        
+                <div class="product__description">
+                  <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+                </div>
+        
+                <span class="product__mini-title">Состав:</span>
+                <ul class="product__compound">
+                  <li>активные натуральные комплексы</li>
+                  <li>витамины С, А, РР, В И Е</li>
+                  <li>солнцезащитные компоненты</li>
+                </ul>
+        
+                <div class="product__price">
+                  <b>Цена</b>
+                  <span>2 750 ₽</span>
+                </div>
+                  
+              </li>
+
+              <li class="catalog__item product">
+              
+                <img src="img/product.jpg" alt="Товар Увлажняющий мусс" class="product__img">
+        
+                <p class="product__tag">для нормальной кожи</p>
+                <h2 class="product__title">Увлажняющий мусс</h2>
+        
+                <div class="product__description">
+                  <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+                </div>
+        
+                <span class="product__mini-title">Состав:</span>
+                <ul class="product__compound">
+                  <li>активные натуральные комплексы</li>
+                  <li>витамины С, А, РР, В И Е</li>
+                  <li>солнцезащитные компоненты</li>
+                </ul>
+        
+                <div class="product__price">
+                  <b>Цена</b>
+                    <span>2 750 ₽</span>
+                </div>
+                  
+              </li>
+
+              <li class="catalog__item product">
+              
+                <img src="img/product.jpg" alt="Товар Увлажняющий мусс" class="product__img">
+        
+                <p class="product__tag">для нормальной кожи</p>
+                <h2 class="product__title">Увлажняющий мусс</h2>
+        
+                <div class="product__description">
+                  <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+                </div>
+        
+                <span class="product__mini-title">Состав:</span>
+                <ul class="product__compound">
+                  <li>активные натуральные комплексы</li>
+                  <li>витамины С, А, РР, В И Е</li>
+                  <li>солнцезащитные компоненты</li>
+                </ul>
+        
+                <div class="product__price"> 
+                  <b>Цена</b>
+                    <span>2 750 ₽</span>
+                </div>
+                  
+              </li>
+            </ul>
+        </section>
+   </main> 
+</body>
+</html>

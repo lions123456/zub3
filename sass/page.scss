@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+// прописать в *: border - size, потому что если блок элемента в F12 не совпадает размеру, поттому что он еще к width: 340 прибавляет padding: 25, если бы была height; border, то прибавил бы еще их
+
+.page {
+    margin: 0;
+    // margin - внутринний отступ
+    padding: 0;
+    // padding - внешний отступ
+    font-family: Arial, sans-serif;
+    // стиль шрифта
+    font-size: 14px;
+    // размер шрифта
+}

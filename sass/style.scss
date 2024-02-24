@@ -1,0 +1,8 @@
+// чтобы это так работало, нужно подключить через @import в style.scss бэм файлы
+@import "mixins.scss";
+@import "container.scss";
+@import "page.scss";
+@import "catalog.scss";
+@import "title.scss";
+@import "product.scss";
+// как мы подключаем import в таком же порядке происходит перебивка переменных, значит чем меньше есть свойств в блоке, тем выше его нужно ставить
